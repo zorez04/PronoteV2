@@ -5,9 +5,9 @@ home_bp = Blueprint("home", __name__)
 
 @home_bp.route("/", methods=["GET"])
 def home():
-    result = sql("""
-    SELECT * FROM enigme ORDER BY id
-    """)
+    #result = sql("""
+    #SELECT * FROM enigme ORDER BY id
+    #""")
 
     user = "Toto"
     return render_template(
