@@ -14,5 +14,7 @@ source venv/Scripts/activate
 export DATABASE_URL="postgresql://USER:PASSWORD@24hducode.fr/DB_NAME"
 python3 -m pip install --only-binary=psycopg2-binary -r requirements.txt
 flask --app app --debug run
+ou
+python3 -m flask --app app --debug run
 ```
 
