@@ -3,9 +3,34 @@
 
 <head>
     <title>Page de test</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
-    <p>Coucou je suis {{ user }}</p>
+
+    <form>
+        <h3> Identifiant </h3>
+        <input type="nom" id="Identifiant" name="Identifiant"/>
+        <br/>
+        <h3> Mot de passe </h3>
+        <input type="password" id="password" name="password"/>
+        <br/>
+        <br/>
+        <button type="submit">Valide</button>
+    </form>
+    
 </body>
 </html>
