@@ -11,10 +11,56 @@
             align-items: center;
             height: 100vh;
             margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0a4091, #16213e);
         }
-
+        
         form {
             text-align: center;
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            width: 300px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0,0.2);
+        }
+
+        h1 {
+            color: #0a4091;
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 15px; 
+        }
+
+        input{
+            width: 100%;
+            padding: 12px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 7px;
+            outline: none;
+        }
+
+        input:focus {
+            border-color: #0a4091;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #0a4091;
+            color: white;
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #062c68;
+            transform: scale(1.03);
         }
     </style>
 </head>
@@ -22,14 +68,22 @@
 <body>
 
     <form>
+
+        <h1>Connexion</h1>
+
         <h3> Identifiant </h3>
         <input type="nom" id="Identifiant" name="Identifiant"/>
+
         <br/>
+
         <h3> Mot de passe </h3>
         <input type="password" id="password" name="password"/>
+
         <br/>
         <br/>
-        <button type="submit">Valide</button>
+
+        <button type="submit">Se connecter</button>
+
     </form>
     
 </body>
