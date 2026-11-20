@@ -12,7 +12,7 @@
             height: 100vh;
             margin: 0;
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #0a4091, #16213e);
+            background: linear-gradient(135deg, #0B1F4B, #16213e);
         }
         
         form {
@@ -25,7 +25,7 @@
         }
 
         h1 {
-            color: #0a4091;
+            color: #0B1F4B;
             margin-bottom: 30px;
         }
 
@@ -44,13 +44,13 @@
         }
 
         input:focus {
-            border-color: #0a4091;
+            border-color: #0B1F4B;
         }
 
         button {
             width: 100%;
             padding: 12px;
-            background-color: #0a4091;
+            background-color: #FF2E93;
             color: white;
             border: none;
             border-radius: 7px;
@@ -59,7 +59,7 @@
         }
 
         button:hover {
-            background-color: #062c68;
+            background-color: #FF2E93;
             transform: scale(1.03);
         }
     </style>
@@ -78,6 +78,17 @@
 
         <h3> Mot de passe </h3>
         <input type="password" id="password" name="password"/>
+        
+        <br/>
+
+        <h3> Profile </h3>
+        <select name="role" id="role">
+            <option value="">Veuillez choisir votre profile </option>
+            <option value="1">Proffesseurs </option>
+            <option value="2">Vie scolaire </option>
+            <option value="3">Dirrections </option>
+            <option value="4">Eleves </option>
+        </select>
 
         <br/>
         <br/>
